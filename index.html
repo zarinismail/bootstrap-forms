@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> "Parasite" Quiz </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>"Parasite" Quiz</h1>
+
+                    <p>How much do you know about the 2019 South Korean film "Parasite"? Try this quiz to test your knowledge, and check your answers on this <a href="https://en.wikipedia.org/wiki/Parasite_(2019_film)">Wikipedia page.</a></p>
+
+                    <form>
+                       <!-- Question 1: single-line text -->
+                        <div class="mb-3">
+                            <label for="question1" class="form-label">What object does Min-hyuk give Ki-woo as a symbol of wealth at the beginning of the film?</label>
+                            <!-- Required: type, name, id -->
+                            <input type="text" class="form-control" name="question1" id="question1">
+                       </div>
+
+                       <!-- Question 2: single-line text -->
+                       <div class="mb-3">
+                            <label for="question2" class="form-label">What pseudonym does Ki-jung use when she meets the Parks?</label>
+                            <!-- Required: type, name, id -->
+                            <input type="text" class="form-control" name="question2" id="question2">
+                       </div>
+
+                       <!-- Question 3: text area-->
+                        <div class="mb-3">
+                            <label for="question3" class="form-label">Describe what the Kims' plan was to replace Moon-gwang, the Parks' housekeeper, with Chung-sook.</label>
+                            <!-- Required: name, id -->
+                            <textarea class="form-control" rows="4" name="question3" id="question3"></textarea>
+                        </div>
+
+                       <!-- Question 4: radio buttons, vertical, 4 -->
+                        <div class="mb-3">
+                            <label class="form-label" id="question4">Who was living in the underground bunker in the Parks' house?</label>
+
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <!-- Required: type, name, value -->
+                                    <input class="form-check-input" type="radio" name="radioq4" value="minhyuk">
+                                    Min-hyuk
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <!-- Required: type, name, value -->
+                                    <input class="form-check-input" type="radio" name="radioq4" value="mgshusband">
+                                    Moon-gwang's husband
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <!-- Required: type, name, value -->
+                                    <input class="form-check-input" type="radio" name="radioq4" value="pastowner">
+                                    The previous owner of the Parks' house
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <!-- Required: type, name, value -->
+                                    <input class="form-check-input" type="radio" name="radioq4" value="kims">
+                                    The Kim family
+                                </label>
+                            </div>
+                            
+                        </div>
+
+                       <!-- Question 5: checkboxes, vertical, 4 (at least more than one correct answer) -->
+                        <div class="mb-3">
+                            <label class="form-label" id="question5">Choose the names of Mr. and Mrs. Park's children.</label>
+
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <!-- Required: type, name, value -->
+                                    <input class="form-check-input" type="checkbox" name="checkboxq5" value="kijung">
+                                    Ki-jung
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <!-- Required: type, name, value -->
+                                    <input class="form-check-input" type="checkbox" name="checkboxq5" value="dasong">
+                                    Da-song
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <!-- Required: type, name, value -->
+                                    <input class="form-check-input" type="checkbox" name="checkboxq5" value="kiwoo">
+                                    Ki-woo
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <!-- Required: type, name, value -->
+                                    <input class="form-check-input" type="checkbox" name="checkboxq5" value="dahye">
+                                    Da-hye
+                                </label>
+                            </div>
+                        </div>
+
+                       <!-- Question 6: select/dropdown menu -->
+                        <div class="mb-3">
+                            <label for="question6" class="form-label">What job did Ki-taek get to be closer to the Parks?</label>
+
+                            <!-- Required: name, id -->
+                            <select class="form-select" size="4" name="question6" id="question6">
+                                <option value="housekeeper">Housekeeper</option>
+                                <option value="therapist">Therapist</option>
+                                <option value="tutor">Tutor</option>
+                                <option value="cook">Cook</option>
+                                <option value="gardener">Gardener</option>
+                                <option value="chauffeur">Chauffeur</option>
+                            </select>
+                        </div>
+
+                       <!-- Submit and reset buttons -->
+                        <div class="mb-3">
+                            <!-- Required: type, value -->
+                            <input type="submit" class="btn btn-primary" value="Submit Answers">
+
+                            <!-- Required: type, value -->
+                            <input type="reset" class="btn btn-secondary" value="Reset Quiz">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
